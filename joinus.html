@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+ <head> 
+   <title>Join us</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+      *{
+        box-sizing : border-box ;
+      }
+
+
+      
+      .btn:focus{
+        margin :0 ;
+        outline: none ;
+      }
+      
+      body{
+        background-image : linear-gradient( to right ,#f0d8b0, whiteSmoke) ;
+      }
+      .page{
+        
+        display : block ;
+        position : absolute ;
+        top : 400px;
+        left : 50% ;
+        transform : translate(-50% , -50%) ;
+        width : 80% ;
+        height : 750px ;
+        border-radius : 23px ;
+        box-shadow : 6px 6px 12px 0 #bbbbba , -4px -4px 12px 0 #f1d27a ;
+        background-image : linear-gradient( to right, whiteSmoke , #fbd491) ;
+        }
+      
+      h1{
+        text-align : center ;  
+        font-family: 'Bebas Neue', cursive;
+        letter-spacing : 3px ;
+        word-spacing : 5px ;
+      }
+      
+      #title{
+        position : relative ;
+        top : 10px ;
+        left : 140px ;
+        font-family: 'Baloo Bhaina 2', cursive;
+        
+        
+      }
+      
+      #border {
+        position : relative ;
+        top : 10px ;
+        left : 10% ;
+       border-bottom : 2px solid black ;
+       width : 80% ;
+      }
+      
+      .info input[type="text"]{
+           display : inline-block ;
+           position : relative ;
+           left : 10% ;
+           margin : 10px ;
+           }
+      
+      .name {
+       width : 75% ;
+       height : 40px ;
+       padding-left : 10px ;
+      }
+      
+      .email {
+       width : 36% ;
+       height : 40px ;
+       padding-left : 10px ;
+      }
+      
+      .contact {
+       width : 37% ;
+       height : 40px ;
+       padding-left : 10px ;
+      }
+      
+       .website {
+       width : 75% ;
+       height : 40px ;
+       padding-left : 10px ;
+      }
+
+      input[type=text], input[type=password], input[type=date]{
+        background : whitesmoke ;
+      }
+      
+      .acc-info  input[type="text"] , .acc-info input[type="password"] , .acc-info input[type="date"]{
+        display : inline-block ;
+        position : relative ;
+        width : 24.4% ;
+        height : 40px ;
+        left :  10% ;
+        margin : 5px ;
+        padding-left : 10px ;
+        
+   }
+      
+   .acc-info  input[type="text"]:focus , .acc-info input[type="password"]:focus , .acc-info input[type="date"]:focus ,.info  input[type="text"]:focus , .info input[type="password"]:focus , .info input[type="date"]:focus , .about  input[type="text"]:focus , .acc-info input[type="password"]:focus , .acc-info input[type="date"]:focus{
+outline : none ;
+   }
+
+
+      .about input[type="text"]{
+        display : inline-block;
+        position : relative ;
+        width : 75.5% ;
+        top : 10px ;
+        left : 10.5% ;
+        height : 150px ;
+        padding-bottom : 100px ;
+        padding-left : 10px ;
+        
+      }
+      
+      
+      .submit{
+        display : inline-block ;
+        position : relative ;
+        top : 0px ;
+        left : 35% ;
+      }
+      .btn{
+        display : block ;
+        position : relative ;
+        width : 150px ;
+        height : 40px ;        
+        top : 40px ;
+        left : 40% ;
+        background : white ;
+        color : black ; 
+        border : 2px solid rgb(248, 136, 8) ;
+        border-radius : 15px ;
+        color : rgb(248, 136, 8) ;
+      }
+
+      .btn:hover {
+        background : rgb(248, 136, 8);
+color : white ;
+box-shadow :4px 4px 12px 0 rgb(214, 118, 8) ;
+
+      }
+
+      .space {
+        position : absolute ;
+        display : block ;
+        width : 200px ;
+        height : 900px ;
+      }
+      
+  </style> 
+ </head> 
+ <body> 
+  <div class="page"> 
+   <h1>JOIN US</h1> 
+   <div class="info"> 
+    <span id="title">Information</span> 
+    <div id="border"></div> 
+    <br> 
+    <input type="text" class="name" Placeholder="Name of Ashram"> 
+    <br> 
+    <input type="text" class="email" placeholder="Email"> 
+    <input type="text" class="contact" placeholder="Contact No."> 
+    <br> 
+    <input type="text" class="website" placeholder="Website (*Optional)"> 
+   </div> 
+   <div class="acc-info"> 
+    <span id="title">Account</span> 
+    <div id="border"></div> 
+    <br> 
+    <input type="text" class="acc-no" Placeholder="Account No."> 
+    <input type="date" class="dob" placeholder="Date of Birth"> 
+    <input type="password" class="cvv" placeholder="CVV"> 
+   </div> 
+   <div class="about"> 
+    <span id="title">About Your Ashram</span> 
+    <div id="border"></div> 
+    <br> 
+    <input type="text" class="msg" placeholder="About your Ashram (*You can Mention your work or the Cause of your Ashram)"> 
+   </div> 
+   <div class="submit"> 
+    <a href="homepage.html"> <button type="submit" class="btn">SUBMIT</button> </a>
+   </div> 
+   <br> 
+   <br> 
+  </div> 
+
+  <footer >
+    <div class="space"></div>
+  </footer>
+ </body>
+</html>

@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en">
+ <head> 
+     
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+ <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>HOME PAGE</title> 
+       
+  
+  <style>
+      
+      *{
+          box-sizing: border-box;
+      }
+
+      body{
+        background-image : linear-gradient( to right ,#f0d8b0, whiteSmoke) ;
+      }
+     
+     .nav {
+        
+         display : inline-block ;
+         position :absolute ;
+         width : 1500px ;
+         height : 80px ;
+         background-image : linear-gradient( to right, whiteSmoke , #fbd491) ;
+         box-shadow : 4px 4px 8px 0 rgb(238, 172, 86) , -2px 2px 12px 0 white  ;
+         border-radius : 20px ;
+     }
+
+    #logo2{
+        display : inline-block ;
+        position : absolute ;
+        width : 60px ;
+        height : 60px ;
+        left : 45px ;
+        border-radius : 100% ;
+        background : rgb(245, 228, 182) ;
+        box-shadow : 4px 4px 8px 0 rgb(238, 172, 86) , -6px 6px 12px 0 white  ;
+        top : 8px ;
+    }
+
+    #name {
+       display : inline-block;
+        position :absolute ;
+        font-family: 'Bebas Neue', cursive;
+        font-size : 1.3em ;
+        left : 120px ;
+        width : 125px ;
+        text-align : center ;
+        top : 20% ;
+    }
+
+    .main-nav {
+        display: inline-block;
+        position : absolute;
+        width : 500px ;
+        left : 0 ;
+        margin-top : 25px ;
+       
+    }
+      
+      #home ,#join-us ,#log-in, #about-us , #contact,#feedback{
+          display : inline-block ;
+         color : rgb(59, 58, 58) ;
+          position : absolute;
+          width : 120px  ;
+          text-decoration : none ;
+          letter-spacing : 2px ;
+          font-size : 1.2em ;
+        
+      }
+
+      #home {
+          left : 300px ;
+      }
+
+      #join-us {
+        left : 500px ;
+      }
+
+      #log-in {
+        left : 700px ;
+      }
+
+      #about-us {
+          left :900px ;
+      }
+
+      #contact{
+          left :1110px ;
+      }
+      #feedback{
+           left: 1320px;
+      }
+
+      #home:hover ,#join-us:hover ,#log-in:hover, #about-us:hover , #contact:hover ,#feedback:hover{
+          font-size : 1.6em ;
+          width : 150px ;
+          color : rgb(236, 130, 81) ;
+          text-decoration: underline;
+      }
+
+      .img {
+          display : block ;
+          position : absolute ;
+          width : 1400px ;
+          height : 600px ;
+          border : 2px solid #fbd491 ;
+          background-image: url(bg2.jpg);
+          background-size: cover;
+          top : 100px ;
+          left : 50px  ;
+          box-shadow : 6px 6px 12px 0 #bbbbba , -4px -4px 12px 0 #f8c63c ;
+                }
+
+          
+         #quote {
+            
+        display : block ;
+        font-size : 2.5em ;
+        color : white ;
+        position: absolute;
+        left: 170px ;
+        font-family: 'Lobster', cursive;
+        word-spacing: 5px ;
+        letter-spacing: 2px;
+        text-shadow: 2px 2px 10px  black;
+       
+         } 
+         html {
+  scroll-behavior: smooth;
+}
+
+         #btn {
+        display :none  ;
+        position :absolute;
+        width : 250px ;
+        height : 60px ;
+        top : 230px ;
+        left : 850px ;
+        background: rgb(236, 130, 81) ;
+        border-radius : 23px ;
+        font-size : 1.3em ;
+        scroll-behavior: smooth;
+        
+        border : none ; 
+        font-family: 'Baloo Bhaina 2', cursive;
+        
+
+         }       
+         
+
+      .img:hover  #quote{
+          display: inline-block;
+          filter : none  !important;
+         
+      }
+      .img:hover  #btn{
+          display: inline-block;
+         
+      }
+
+#btn:hover{
+    box-shadow : 4px 4px 12px 0 rgb(107, 65, 46) , -3px -3px 12px 0 white;
+    background : white ;
+        color : rgb(236, 130, 81) ;
+}
+
+      .info {
+          display: inline-block;
+        position : absolute ;
+          top : 700px ;          
+         left : 100px ;
+         top : 750px ;
+          width : 1200px ;
+          height : 120px ;
+      }
+    
+     #no-of-ashram {
+         display : block ;
+         top : 10px ;
+         position : relative ;
+         background-image : linear-gradient( to left ,#f0d8b0, whiteSmoke) ;
+   left : 300px ;
+   width : 100px ;
+   height : 100px ;
+   border-radius : 50px ;
+   box-shadow : 4px 4px 12px 0 rgb(104, 104, 104) , -4px -4px 12px 0 rgb(223, 220, 220) ;
+
+     }
+
+     #worth-donation {
+         display: block;
+        position :relative ;
+        background-image : linear-gradient( to left ,#f8d496, whiteSmoke) ;
+   border-radius : 50px ;
+   top : -90px ;
+   left : 900px ;
+   width : 100px ;
+   height : 100px ;
+   box-shadow : 4px 4px 12px 0 rgb(104, 104, 104)  ;
+     }
+
+     #house , #dollar-sign {
+     position : absolute ;
+     top : 38px ;
+     left : 40px ;
+     }
+
+     #element1 ,#element2 {
+   position : absolute ;
+   top : 120px ;
+   font-family: 'Baloo Bhaina 2', cursive;
+   width : 200px ;
+   height : 70px ;
+   font-size : 1.4em ;
+
+   
+     }
+
+     #element2 {
+         left : -5px ;
+     }
+    
+     #element1 {
+         left : 30px ;
+     }
+
+    #element4 , #element5 {
+          position : absolute ;
+          top : 170px ;
+          width : 200px ;
+          font-family: 'Baloo Bhaina 2', cursive;
+          
+      }
+      
+#element4{
+    left : 20px ;
+}
+
+#element5{
+    left  : -20px ;
+}
+     .search {
+        position : absolute ;
+          top : 1020px ;
+          
+          left : 28% ;
+     }
+
+     #search-bar {
+        width : 700px ;
+        height : 40px ;
+        border : 2.5px solid #eba44e ;
+        border-radius :23px ;
+        padding : 10px ;
+        background: rgb(241, 239, 239);
+
+     }
+
+
+     #search-bar:hover {
+        outline: none ;
+      
+        font-size : 1.2em ;
+     } 
+
+
+     #search-bar:focus {
+         outline: none ;
+       transform: scaleY(10px);
+        font-size : 1.2em ;
+     }
+     #icon2 {
+         position : absolute ;
+ width : 20px ;
+ height : 20px ;
+ right : 14px ;
+ top : 8px ;
+     }
+ 
+      .cards {
+          position : absolute ;
+          top : 1200px ;
+      }
+
+      .cards > div {
+  
+        border : 1.5px solid #eba44e ;
+        border-radius : 3px ;
+          display: inline-block;
+          position : relative ;
+          width : 300px ;
+          height : 400px ;
+          margin : 50px ;
+          left : 150px ;
+            box-shadow : 4px 4px 12px 0 #bbbbba , -4px -4px 12px 0 #bbbbba ;
+            background: rgb(241, 239, 239);
+            }
+
+  
+            #img1:hover ,#img2:hover ,#img3:hover , #img4:hover, #img5:hover , #img6:hover , #img7:hover , #img8:hover , #img9:hover ,#img10:hover , #img11:hover , #img12:hover{
+
+ opacity: 50%;
+            }
+         
+      
+        #img1{
+         
+         background-image: url(Balgram1.JPG);
+         background-size: cover ;
+
+        }
+        
+         #img1 ,#img2 ,#img3 , #img4 , #img5 , #img6 , #img7 , #img8 , #img9 ,#img10 ,#img11,#img12  {
+           display : inline-block ;
+           position : absolute ;
+           border : 2px solid #ccc ;
+           width : 280px ;
+           left : 10px ;
+           top : 10px ;
+           height : 200px ;
+           
+        }
+
+
+        
+        #img2{
+         
+         background-image: url(shantivan\ ashram.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img3{
+         
+         background-image: url(Nachiket\ Balgram.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img4{
+         
+         background-image: url(Life\ Care\ Old\ Age\ Home\ beed.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img5{
+         
+         background-image: url(MadhubanVrudhashram-Amravati.jpeg);
+                  background-size: cover ;
+
+
+     }
+     #img6{
+         
+         background-image: url(Gandhi\ Ashram\ amrivti.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img7{
+         
+         background-image: url(Gandhi\ Ashram\ buldana.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img8{
+         
+         background-image: url(swami\ vivekananda\ ashram\ in\ buldhana.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img9{
+         
+         background-image: url(Wardha_Mahila-Ashram.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img10{
+         
+         background-image: url(SnehaAsharam.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img11{
+         
+         background-image: url(shreevatsaAshram.jpg);
+         background-size: cover ;
+        
+
+     }
+     #img12{
+         
+         background-image: url(11111111111.jpg);
+         background-size: cover ;
+        
+
+     }
+     
+        #see-more {
+           display: none;
+            position : relative ;
+            width : 130px ;
+            height : 40px ;
+            left : 25% ;
+            top : 40% ;
+            border : none ; 
+            border-radius : 23px ;
+           
+            
+        }
+
+        #img1:hover >#see-more ,#img2:hover >#see-more ,#img3:hover >#see-more , #img4:hover >#see-more, #img5:hover > #see-more , #img6:hover > #see-more , #img7:hover > #see-more , #img8:hover > #see-more , #img9:hover > #see-more , #img10:hover > #see-more ,#img11:hover > #see-more ,#img12:hover > #see-more{
+
+display : block ; 
+           }
+        
+#see-more:hover{
+  
+  color : white ;
+  border : 2px solid rgb(0, 0, 0) ;
+  background : rgb(255, 81, 0) ;
+}
+
+
+
+
+
+     
+     #txt1 ,#txt2 ,#txt3 ,#txt4 ,#txt5 ,#txt6 ,#txt7 ,#txt8 ,#txt9,#txt10,#txt11,#txt12  {
+      display : inline-block ;
+      position : absolute ;
+      top : 220px ;
+     font-style :normal ; 
+      font-weight : 1000 ;
+      text-align: center;
+      font-family: 'Baloo Bhaina 2', cursive;
+      font-size : 1.2em ;
+           }
+
+           .pinfo{
+               position : absolute ;
+               top : 270px ;
+           }
+    
+  .footer {
+  
+         width : 1500px ;
+         height : 200px ;
+         background-image : linear-gradient( to right, whiteSmoke , #fbd491) ;
+         box-shadow : 4px 4px 8px 0 rgb(238, 172, 86) , -2px 2px 12px 0 white  ;
+         border-radius : 20px ;
+  }
+
+  #logo69{
+    display : inline-block ;
+        position : absolute ;
+        width : 60px ;
+        height : 60px ;
+        left : 45px ;
+        border-radius : 100% ;
+        background : rgb(245, 228, 182) ;
+        box-shadow : 4px 4px 8px 0 rgb(238, 172, 86) , -6px 6px 12px 0 white  ;
+        top : 2030px ;
+  }
+
+  #name2 {
+    display : inline-block;
+        position :absolute ;
+        font-family: 'Bebas Neue', cursive;
+        font-size : 1.3em ;
+        left : 120px ;
+        width : 125px ;
+        text-align : center ;
+        top :2040px ;
+    }
+    #para {
+        position : absolute ;
+        top : 2100px ;
+        width : 700px ;
+        height : 70px ;
+        left : 130px ;
+        font-family: 'Montserrat', sans-serif;
+       
+    }
+
+    #element42{
+        
+        position : absolute ;
+        left : 1000px ;
+        width : 400px ;
+    }
+
+#email-txt , #no-txt {
+    position : absolute ;
+     top : 50px ;
+}
+    
+
+#email-txt {
+    
+    left : -35px ;
+}
+
+#no-txt {
+    top : 40px ;
+    left : 270px ;
+}
+
+#icon3 ,#icon4  {
+    position : absolute ;
+    top : 10px ;
+}
+
+#icon4 {
+  
+  left : 300px ;
+}
+
+#follow {
+
+    position : absolute ;
+   left : 1120px ;
+   top : 2135px ; 
+   font-family: 'Baloo Bhaina 2', cursive;
+}
+
+#icon5 ,#icon6 ,#icon7 ,#icon8 {
+position : absolute ;
+top : 2170px ;
+
+
+}
+
+#icon5{
+    left : 1100px ;
+}
+
+#icon6{
+    left : 1130px ;
+}
+
+#icon7{
+    left : 1160px ;
+}
+#icon8{
+    left : 1190px ;
+}
+
+
+#icon3:hover , #icon4:hover{
+  
+    filter: invert(100%) ;
+    }
+
+ #icon8:hover   {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+ }
+
+
+ #icon7:hover   {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(57%);
+ }
+
+ #icon5:hover   {
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(240deg) brightness(104%) contrast(57%);
+ }  
+
+
+ #icon6:hover   {
+    filter: invert(27%) sepia(100%) saturate(3008%) hue-rotate(260deg) brightness(104%) contrast(97%);
+ }  
+
+     </style> 
+     
+ </head> 
+ <body> 
+    
+    <a href="#btn"></a>
+  <div class="nav"> 
+   <div class="logo"> 
+    <img id="logo2" src="logo2.png"> 
+    <span id="name">Seeing Eyes and Helping Hands</span> 
+   </div> 
+   <div class="main-nav"> 
+    <a href="#" id="home">HOME</a> 
+    <a href="joinus.html" id="join-us">JOIN US</a> 
+    <a href="login.html" id="log-in">LOG IN</a> 
+    <a href="aboutus.html" id="about-us">ABOUT US </a> 
+    <a href="contact.html" id="contact">CONTACT </a> 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfKSaZy_eY0w7n6FwsbnTGuosxb0OMlEMjuPajGjuji0-UfyA/viewform?fbzx=5944858886873883025"id="feedback">FEEDBACK</a>
+   </div> 
+   <div class="img"> 
+       <pre id="quote">"The measure of life is not its duration, but its donation."
+                                            -Peter Marshall
+       </pre>
+       <a href="#card1">  <button type="button" id="btn">DONATE</button> </a>
+   </div> 
+   <div class="info"> 
+    <span id="no-of-ashram"><img id="house" src="home.svg"> <span id="element1">10+</span> <span id="element4"> ASHRAM</span></span> 
+    <span id="worth-donation"> <img id="dollar-sign" src="dollar-sign.svg"> <span id="element2"></span> <span id="element5">WORTH DONATION</span> </span> 
+   </div> 
+   <div class="search"> 
+    <input type="text" id="search-bar" placeholder="Search...."> 
+    <img id="icon2" src="search.svg"> 
+   </div> 
+   <div class="cards"> 
+    <div id="card1"><span id="img1"><span id="txt1">Balgram Asharam  </span><span class="pinfo" >It is a place where people live together to share a contemplative life of meditation and dedication to a higher, spiritual aim.</span><span id="background"></span>  <button type="button" id="see-more"><a href="balgram.html">   SEE MORE</a></button></span>   
+        
+    </div>
+    <div id="card2"><span id="img2"><span id="txt2">Shantivan Asharam  </span><span class="pinfo">The poor connectivity of the place with the rest of the Wardha town was soon done away with when Gandhiji decided to use this Ashram as a pivotal point in his campaigns to serve the country.</span><button type="button" id="see-more"><a href="Shantivan.html">SEE MORE</a></button></span>
+           
+    </div> 
+    <div id="card3"><span id="img3"><span id="txt3">Nachiket Balgram Asharam </span><span class="pinfo">After realizing that his real nature was "formless, immanent consciousness", he left his family home and traveled to holy Mount Arunachala, where he remained for the rest of his life.</span><button type="button" id="see-more"><a href="nachiketbalgram.html">SEE MORE</a></button></span>
+    </div> 
+    <div id="card4"><span id="img4"><span id="txt4">Life Care Old Age Asharam  </span><span class="pinfo">eaching out to more children and integrating the current home with an old age home, building facilities like a yoga and meditation centre and naturopathy centre.</span><button type="button" id="see-more"><a href="lifecare.html">SEE MORE</a></button></span>
+      
+    </div> 
+    <div id="card5"><span id="img5"><span id="txt5">Mandhuban Asharam  </span><span class="pinfo">They aim is to provide peace to these women in their last days. Apart from basic facilities including food and a separate bed, organization also has an active medical staff to take care of the elderly</span><button type="button" id="see-more"><a href="mandhubhan.html">SEE MORE</a></button></span>
+     
+    </div> 
+    <div id="card6"><span id="img6"><span id="txt6">Gandhi Asharam </span><span class="pinfo">We support personal self-development, helping bring quality into lives through yogic tools and experiential learning.</span><button type="button" id="see-more"><a href="gandi.html">SEE MORE</a></button></span>
+     
+    </div> 
+    <div id="card7"><span id="img7"><span id="txt7">Mauli Bal Asharam  </span><span class="pinfo">Common to all true hermits and eremitical institutions is an emphasis on living alone, on pursuing a highly regularized contemplative life with individually generated, often experimental spiritual disciplines.</span><button type="button" id="see-more"><a href="maulibal.html">SEE MORE</a></button></span>
+     
+    </div> 
+    <div id="card8"><span id="img8"><span id="txt8">Swami Vivekananda Asharam <br>  </span><span class="pinfo"> The meditation center, with its magnificent and lofty structure, grabbed the attention and imagination of everyone, with a capacity to seat 100,000 people for meditation at one time. </span><button type="button" id="see-more"><a href="swami.html">SEE MORE</a></button></span>
+     
+    </div> 
+    <div id="card9"><span id="img9"><span id="txt9">Mahatma Gandhi Asharam <br>  </span><span class="pinfo">When Gandhi started his padayatra (foot march) in 1930 from Sabarmati Ashram to Dandi for the Salt Satyagraha, he had decided not to return to Sabarmati till independence for India was attained.</span><button type="button" id="see-more"><a href="mahatama.html">SEE MORE</a></button></span>
+    </div> 
+    <div id="card10"><span id="img10"><span id="txt10">SnehAnkur Anathashram </span><span class="pinfo"> SnehAnkur  is a care centre for the family deprived children which is located in Pune, a city in Maharashtra a western Indian state. The centre offers its orphans for adoption.</span><button type="button" id="see-more"><a href="Snehsawli.html">SEE MORE</a></button></span>
+    
+    </div> 
+    <div id="card11"><span id="img11"><span id="txt11">Royal Rose Foundation  </span><span class="pinfo"> Royal Rose Foundation -an organisation from is a registered charitable trust. Rose Balgram as a unit of this trust - is a child age home where in for child</span><button type="button" id="see-more"><a href="royalrose.html">SEE MORE</a></button></span>
+     
+    </div> 
+    <div id="card12"><span id="img12"><span id="txt12">Shreevatsa Sanstha  </span><span class="pinfo"> The centre offers its orphans for adoption. It is operated by "Society of Friends of Sassoon Hospitals", a charitable organisation associated with Sassoon Hospital, Pune.</span><button type="button" id="see-more"><a href="shreevatsa.html">SEE MORE</a></button></span>
+   
+  </div> 
+ 
+<footer>
+<div class="footer">
+    <div class="logo69"> 
+        <img id="logo69" src="logo2.png"> 
+        <span id="name2">Seeing Eyes and Helping Hands</span> 
+        <span id="para"> Through Our Website, NGOs display the products they are in immediate need of. Similar to online shopping once you make the payment, the products will be delivered to the organization you support either at the end of the campaign (or) once they reach the target. You will always be able to track your donation and Campaigns will keep updating the donors about the utilisation of products.</span>
+        <span id="element42">
+            <a href="mailto:rathi.chetanya@gmail.com"> <img  id="icon3" src="email.svg"></a>
+            <span id="email-txt">rathi.chetanya@gmail.com</span>
+            <pre id="no-txt">+91 8830451805</pre>
+            <img id="icon4" src="phone.svg"></span>
+           <span id="element69">
+           <span id="follow"> Follow us on</span>
+           <a href="https://www.facebook.com/chetan.rathi.7906"> <img id="icon5" src="facebook.svg"></a>
+            <a href="https://twitter.com/Chetanya_Rathi"> <img  id="icon6"src="twitter.svg"> </a>
+            <a href="https://www.instagram.com/chetanya.rathi/"> <img  id="icon7" src="instagram.svg"> </a>
+           <a href="https://www.youtube.com/channel/UC3X4G4saNhvXLP8wuDrDAig"> <img  id="icon8"src="youtube.svg"></a>
+        </span>    
+    </div>
+</div>
+
+</footer>
+<br>
+<br>
+
+ </body>
+
+ 
+</html>

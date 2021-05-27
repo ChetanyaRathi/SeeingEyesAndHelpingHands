@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP</title>
+   <style>
+
+*{
+    box-sizing : border-box ;
+}
+
+body{
+    background-image : linear-gradient( to right ,#f0d8b0, whiteSmoke) ;
+}
+       .page {
+           display: block ;
+           position : absolute ;
+           top : 50% ;
+           left : 50% ;
+           transform : translate(-50% , -50% );
+          box-shadow : 4px 4px 12px 0 rgb(148, 147, 147) , -4px -4px 12px 0 whitesmoke ;
+           width :60% ;
+           height : 60%;
+           border-radius : 23px ;
+           background-image : linear-gradient( to right, whiteSmoke , #fbd491) ;
+       }
+
+       h1{
+           display : block ;
+           position : relative ;
+           top : 30px;
+           left : 40% ;
+           width : 200px ;
+           font-family: 'Bebas Neue', cursive;
+           letter-spacing : 2px ;
+        word-spacing : 5px ;
+       }
+
+
+       #text{
+           position: relative ;
+           left : 25% ;
+           top: 50px;
+           height: 40px;
+           width: 400px;
+           border-radius: 15px;
+           
+           }
+        #password{
+             position: relative;
+             left : 25% ;
+             top: 100px;
+             height: 40px;
+             width: 400px;
+             border-radius: 15px;
+             }
+
+.page input[type="text"] ,.page input[type="pasword"]{
+padding : 10px ;
+    
+}
+        
+.page input[type="text"]:focus ,.page input[type="password"]:focus{
+    outline : none ;
+}
+        
+        #for{
+            position: absolute ;
+          top : 270px ;
+            left: 510px;
+
+        }
+       p{
+            position: absolute;
+          display : block ;
+top : 360px ;
+left : 320px ;
+width : 300px ;
+           
+        }
+         #button{
+             position: absolute;
+            display : block ;
+            border-radius:  20px;
+            border : 2px solid rgb(250, 180, 51);
+             height : 40px;
+             width: 100px;
+             top: 320px;
+             left: 400px;
+             background : white ;
+             color : rgb(226, 157, 30) ;
+         }
+#button:hover {
+    color : white ;
+    background : rgb(250, 180, 51);
+    box-shadow : 4px 4px 12px 0 rgb(128, 87, 13);
+}
+
+#button:focus{
+    outline : none ;
+}
+a{
+    text-decoration : none ;
+    color : rgb(80, 183, 231);
+}
+
+
+
+   </style>
+</head>
+<body>
+    <marquee style="z-index:2;position:absolute;left:18px;top:70px;font-family:Cursive;font-size:14pt;color:#042e5e;height:200px;" scrollamount="10" direction="left">Limitation of our website, we do not have our database and server hence recently we are not able to take sign in . In forth coming days we will be adding database and our own server to our website.</marquee>
+
+<div class="page" >
+    <h1 id="signup">LOG IN</h1>
+      
+     <input type="text" id="text" name="Email" placeholder="Enter your Email">  <br>
+     <input type="password" id="password" name="password" placeholder="Enter your password">
+     <a href="#" id="for" >Forgot Password</a>
+    
+    
+     <a href="homepage.html"> <button id="button"> SIGN UP</button> </a>
+     <p>Don't have an Account ? <a href="createaccount.html" id="create">Create Account</a></p>
+    </div>
+
+</body>
+</html>

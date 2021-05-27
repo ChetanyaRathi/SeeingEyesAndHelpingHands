@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Account</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Account</title>
+    <style>
+          
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image : linear-gradient( to right ,#f0d8b0, whiteSmoke) ;}
+
+.page{
+    display : block ;
+    position :absolute;
+  box-shadow: 4px 4px 12px 0 rgb(124, 123, 123) , -4px -4px 12px 0 whitesmoke;
+    top : 50% ;
+    left : 50% ;
+    transform : translate(-50% , -50% );
+    width : 60% ;
+    height : 80% ;
+    border-radius: 23px ;
+    background-image : linear-gradient( to right, whiteSmoke , #fbd491) ;
+ 
+
+}
+          
+h1{
+    position : absolute ;
+    top : 20px ;
+    left : 40% ;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing : 5px ;
+    word-spacing : 5px ;
+}
+          
+        #fname{
+            display : inline-block ;
+            position: absolute;
+            top : 120px ;
+            left : 10% ;
+            width : 300px ;
+            height : 40px ;
+
+           
+        }
+        #lname{
+            display : inline-block ;
+            position: absolute;
+            top : 120px ;
+            left : 50% ;
+            width : 300px ;
+            height : 40px ; }
+
+             .gender {
+                display : inline-block ;
+                position: absolute;
+                top : 180px ;
+                left : 25% ;
+                width : 500px ;
+                word-spacing : 8px ;
+                letter-spacing : 2px ;
+                color : rgb(73, 71, 71) ;
+                
+            }
+             
+     .info{
+          display : block ;
+          position : absolute ;
+          width : 400px ;
+          height : 200px ;
+          
+          top : 240px ;
+          left : 10% ;
+      }
+
+      #email{ display : inline-block ;
+            position: absolute;
+            width : 670px ;
+            height : 40px ;
+           
+        }
+
+        #password{ display : inline-block ;
+            position: absolute;
+            width : 300px ;
+            height : 40px ;
+            top : 70px ;
+            
+           
+           }
+
+           #re-password{ display : inline-block ;
+               position: absolute;
+               width : 300px ;
+            height : 40px ;
+            top : 70px ;
+            left : 93% ;
+              
+           }
+        #cont{ display : inline-block ;
+            position: absolute;
+            width : 400px ;
+            height : 40px ;
+            top : 170px ;
+        }
+    
+        
+               #btn{
+                display: block;
+                position: absolute;
+                border-radius: 23px;
+                height: 35px;
+                width: 120px;
+                top: 250px;
+                left: 80% ;
+                background: white;
+                color : rgb(243, 166, 24) ;
+                border : 2px solid rgb(243, 166, 24) ;
+            }
+            
+            
+           #btn:hover {
+               color : white ;
+               background:  rgb(243, 166, 24);
+               box-shadow : 4px 4px 12px 0  rgb(117, 85, 25) ;
+           }
+
+
+          #btn:focus {
+              outline: none ;
+          }
+
+
+          ::placeholder {
+             padding : 10px ;
+             size : 2em ;
+          }
+          .page input[type=text] , .page input[type=password] , .page input[type=radio]{
+              background: rgb(248, 244, 244);
+          }
+
+.page input[type=text]:focus , .page input[type=password]:focus , .page input[type=radio]:focus{
+
+     outline: none;
+     padding : 10px ;
+}
+ 
+
+
+    </style>
+</head>
+<body>
+
+<div class="page">
+     <h1>SIGN UP</h1>
+
+    <input type ="text" id="fname" placeholder="First name ">
+    <input type ="text" id="lname" placeholder="Last name "><br>
+  
+    <div class="gender">
+        <span>Gender :</span>
+
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">Male</label>
+
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">Female</label>
+
+<input type="radio" id="other" name="gender" value="other">
+<label for="other">Others</label>
+</div>
+    <div class="info" >
+        
+    <input type="text" id="email" placeholder="Email">
+    <input type="password"id="password" placeholder="Password">
+    <input type="password"id="re-password" placeholder="Re-enter your Password">
+    <input type ="text" id="cont"  placeholder="Phone no.">
+  
+    <a href="homepage.html"> <button id="btn" > SUBMIT</button> </a>
+
+</div>
+</div>
+</body>
+</html>
